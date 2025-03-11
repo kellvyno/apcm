@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos Turísticos de Recife</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Pontos Turísticos de Recife</h1>
+        <p>Descubra os lugares mais incríveis para visitar na cidade do Recife - PE.</p>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Recife_Antigo_Pernambuco_Brazil.jpg" class="card-img-top" alt="Recife Antigo">
+                    <div class="card-body">
+                        <h5 class="card-title">Recife Antigo</h5>
+                        <p class="card-text">Um dos bairros mais históricos da cidade, cheio de cultura e vida noturna.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Instituto_Ricardo_Brennand_Recife_Pernambuco.jpg" class="card-img-top" alt="Instituto Ricardo Brennand">
+                    <div class="card-body">
+                        <h5 class="card-title">Instituto Ricardo Brennand</h5>
+                        <p class="card-text">Um dos museus mais famosos do Brasil, com um acervo impressionante.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Marco_Zero_Recife.jpg" class="card-img-top" alt="Marco Zero">
+                    <div class="card-body">
+                        <h5 class="card-title">Marco Zero</h5>
+                        <p class="card-text">O ponto de partida da cidade e um dos lugares mais visitados pelos turistas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.card').hover(function(){
+                $(this).toggleClass('shadow-lg');
+            });
+        });
+    </script>
+</body>
+</html>
